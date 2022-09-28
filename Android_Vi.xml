@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">  <!-- name="Android" -->
+	
+	<!-- <parameter name="userType" value="${UserType}"/> BasicDefaultUser/ClassicUser/VIPUser 
+		<parameter name="runMode" value="${runMode}"/> <parameter name="runModule" 
+		value="${runModule}"/> <parameter name="browserType" value="${browserType}"/> -->
+
+	<parameter name="userType" value="VIPUser" />  <!-- BasicDefaultUser/ClassicUser/VIPUser -->
+	<parameter name="runModule" value="Suite" />
+	<parameter name="runMode" value="Suites" /> 
+	
+	<parameter name="DefaultUserMobileNumber" value="" />
+	<parameter name="ClassicUserMobileNumber" value="" />
+	<parameter name="VIPUserMobileNumber" value="9607997130" />
+	<parameter name="ParentalControlPassword" value="123456" />
+	<listeners>
+		<listener class-name="com.extent.ExtentReporter" />
+		<!--  <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
+		<!-- <listener class-name="com.utility.MyTranformer"/> -->
+	</listeners>
+
+
+	<test name="Android_Vi">
+		<classes>
+			<class
+				name="com.zee5.ApplicasterScripts.Android_Vi_Scripts" />
+		</classes>
+	</test> 
+	
+</suite>

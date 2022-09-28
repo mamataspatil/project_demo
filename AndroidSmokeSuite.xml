@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">  <!-- name="Android" -->
+
+    <parameter name="userType" value="${UserType}"/> <!-- Guest/NonSubscribedUser/SubscribedUser -->
+    <parameter name="runMode" value="${runMode}"/>
+    <parameter name="runModule" value="${runModule}"/>
+    <parameter name="browserType" value="${browserType}"/>
+    <parameter name="Build" value="${BuildVersionChoice}"/>
+    <parameter name="BuildVersion" value="${BuildVersion}"/>
+
+<!--    <parameter name="userTypeDownloads"-->
+<!--               value="NonSubscribedUser,SubscribedUser"/>  &lt;!&ndash; Guest/NonSubscribedUser/SubscribedUser &ndash;&gt;-->
+<!--    <parameter name="allUserType" value="SubscribedUser,NonSubscribedUser,Guest"/>-->
+<!--    <parameter name="userType" value="SubscribedUser"></parameter>-->
+<!--    <parameter name="runModule" value="Suite"/>-->
+<!--    <parameter name="runMode" value="Suites"/>-->
+<!--    <parameter name="registeredUser" value="NonSubscribedUser,SubscribedUser"></parameter>-->
+
+
+    <parameter name="SubscribedUserName" value="test296@m.com"/>
+    <parameter name="SubscribedPassword" value="123456"/>
+    <parameter name="searchKeyword" value="Aditya praises Paaru"/>
+    <parameter name="searchKeyword1" value="Paaru gets tipsy"/>
+    <parameter name="registeredEmail" value="test292@m.com"/>
+    <parameter name="registeredEmailPassword" value="123456"/>
+    <parameter name="newEmailPassword" value="123456"/>
+    <parameter name="Platform" value="AndroidHLS"/>
+    <parameter name="regUserName" value="igszeefive3@gmail.com"/>
+    <parameter name="regPassword" value="123456"/>
+    <parameter name="registeredMobile" value="8050409929"/>
+    <parameter name="registeredMobilePassword" value="welcome"/>
+    <parameter name="UnRegisteredMobile" value="8073661163"/>
+    <parameter name="PromoCode" value="ZEE5SCB"/>
+    <parameter name="SubscribedUserName" value="test296@m.com"/>
+    <parameter name="SubscribedPassword" value="123456"/>
+    <parameter name="NonsubscribedUserName" value="test292@m.com"/>
+    <parameter name="NonsubscribedPassword" value="123456"/>
+
+    <parameter name="NonsubscribedUserName" value="test292@m.com"/>
+    <parameter name="NonsubscribedPassword" value="123456"/>
+
+
+    <listeners>
+        <listener class-name="com.extent.ExtentReporter"/>
+        <!--  <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
+        <!-- <listener class-name="com.utility.MyTranformer"/> -->
+    </listeners>
+
+    <test name="Android_BSS_Onboarding">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.onboarding.AndroidOnboardingTests" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_Search">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.search.AndroidSearchTests" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_Registration">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.registration.AndroidRegistrationSanity" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_Downloads">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.downloads.AndroidDownloads" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_More">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.moreSection.AndroidMoreSectionTest" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_Consumption">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.consumption.AndroidConsumptionTests" />
+        </classes>
+    </test>
+
+    <test name="Android_BSS_Installation">
+        <classes>
+            <class name="com.zee5.ApplicasterScripts.smoke.installation.AndroidInstallationTest" />
+        </classes>
+    </test>
+
+</suite>

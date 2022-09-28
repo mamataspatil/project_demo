@@ -1,0 +1,29 @@
+bin/
+Libs/
+DFPExcelDump/
+.settings
+.classpath
+/Reports/
+debug.log
+settings*
+console.properties
+appium.log
+test-output/
+target/
+session.chls
+
+# Eclipse Core
+.project
+.classpath
+
+# Mac files
+.DS_Store
+/target/
+
+# IntelliJ
+.idea/
+.idea/*
+*.iml
+target/*
+/target/
+screenshots/

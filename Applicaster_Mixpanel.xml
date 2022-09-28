@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">  <!-- name="Android" -->
+
+    <parameter name="userType" value="Guest" />  <!-- Guest/NonSubscribedUser/SubscribedUser -->
+	<parameter name="runModule" value="Suite" />
+	<parameter name="runMode" value="Suites" /> 
+	
+	<parameter name="NonsubscribedUserName" value="ramkt@gmail.com" />	<parameter name="NonsubscribedPassword" value="123456" />
+	
+	<parameter name="SubscribedUserName" value="499subnoradhe@gmail.com" />
+	<parameter name="SubscribedPassword" value="123456" />
+	
+	<parameter name="ParentalNonsubscribedUserName" value="zeetest@gmail.com" />
+	<parameter name="ParentalNonsubscribedPassword" value="zee123" />
+	
+	<parameter name="ParentalSubscribedUserName" value="newsub12@gmail.com" />
+	<parameter name="ParentalSubscribedPassword" value="123456" />
+	
+	<parameter name="FirstName" value="edcv" />
+	<parameter name="LastName" value="yuhj" />
+	
+	<parameter name="tabName" value="Movies" />
+	<parameter name="displayLanguage" value="Marathi" />
+	
+	<parameter name="pTabName" value="Home" />		<!-- Home|TV Shows|Movies|Web Series|News|Premium|Live TV|Music|Eduauraa -->
+	
+	<parameter name="keyword1" value="Jodi Hakki" />
+	<parameter name="keyword2" value="Chemistry of Kariyappa" />
+	<parameter name="keyword3" value="Shivaji Surathkal" />
+	<parameter name="keyword4" value="Aditya apologises to Paarvathi - Paaru" />
+	<parameter name="keyword5" value="Rudrathandava - Chambal" />
+	<parameter name="keyword6" value="Popcorn Monkey Tiger (A)" />
+	<parameter name="keyword7" value="Trailer - No Entry" />
+	<parameter name="keyword7" value="Trailer - No Entry"/>
+	<parameter name="keyword8" value="Bublu Dablu - Robo Rumble"/>
+	<parameter name="keyword9" value="Kurukshetra"/>
+	
+	<parameter name="trailerContent" value="Shivaji Surathkal | Trailer" />
+	<parameter name="trailerContentID" value="0-0-197301" />
+	<parameter name="freeContent" value="Bablu Dablu - Robo Rumble" />
+	<parameter name="freeContentID" value="0-0-54219" />
+	<parameter name="premiumContent" value="Shivaji Surathkal" />
+	<parameter name="premiumContentID" value="0-0-197297" />
+	<parameter name="videoQualityOption" value="Best" />
+	<parameter name="downloadQualityOption" value="Best" />
+	<parameter name="AdID" value="b035292e-6d7d-40ec-b825-194641d966eb" />
+	<parameter name="clipContentID" value="0-1-249189" />
+	<parameter name="clipContent" value="Paaru gets tipsy" />
+	<parameter name="audioTrackContent"	value="Episode 01 - Ganga Enters Widowhood" />
+	
+	<parameter name="content1" value="Yennenu Soda"/>
+	<parameter name="contentID1" value="0-0-75729"/>
+	<parameter name="content2" value="Sundari - Hebbuli"/>
+	<parameter name="content3" value="Bhinna Sharapanjara"/>
+	<parameter name="contentID3" value="0-0-85267"/>
+	<parameter name="content4" value="Hebbuli Title Song"/>
+	<parameter name="content5" value="Kanneeraa - Kavacha"/>
+	<parameter name="contentID5" value="0-0-75977"/>
+	<parameter name="rentalContent"	value="TVOD Test movie" />
+	<parameter name="keywordID4" value="0-1-manual_779smvu9cl80" />
+	<parameter name="zeeplexContent" value="TVOD Test movie 2"/>
+	<parameter name="zeeplexContentID" value="0-0-425002"/>
+	<parameter name="clipID" value="0-2-1095" />
+	<parameter name="firstEpisode" value="The Hunter's Scent" />
+	<parameter name="premiumContent2" value="Hero"/>
+    <parameter name="premiumContentID2" value="0-0-403244"/>
+    <parameter name="premiumContentID3" value="0-0-403592"/>
+    <parameter name="trayName" value="Up Next"/>
+    <parameter name="audioTrackContentID"	value="0-1-136585"/>
+	
+	
+	<parameter name="BottomNavigation" value="Downloads" />
+	<parameter name="MoreMenuOptions" value="Settings" />
+	
+	<parameter name="supermoonContentID" value="0-0-103589" />
+	<parameter name="supermoonContentName" value="Binge Holidays" />
+	
+	<parameter name="SuperMoonRentalUserName" value="juspayotp@mailnesia.com" />
+	<parameter name="SuperMoonRentalPassword" value="111222" />
+	
+	<parameter name="trayIndex" value="3" />
+	<parameter name="keyword2ID" value="0-0-45928"/>
+	
+	<parameter name="premiumContent2" value="Hero" />
+	<parameter name="premiumContentID2" value="0-0-403244" />
+	<parameter name="premiumContentID3" value="0-0-403592" />
+	<parameter name="trayName" value="Up Next" />
+	<parameter name="audioTrackContentID" value="0-1-136585" />
+	
+	<listeners>
+		<listener class-name="com.extent.ExtentReporter" />
+		<!--  <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
+		<!-- <listener class-name="com.utility.MyTranformer"/> -->
+	</listeners>
+	
+	 <!-- <test name="AdroidMixpanel_AdView">
+		<classes>
+			<class name="com.zee5.AndroidMixpanelTest.AdroidMixpanel_AdView" />
+		</classes>
+	</test>
+	
+	 <test name="AndroidMixpanel_P1_Events">
+		<classes>
+			<class name="com.zee5.AndroidMixpanelTest.AndroidMixpanel_P1_Events" />
+		</classes>
+	</test> -->
+	
+	<test name="AndroidMixpanel_P2_Events">
+		<classes>
+			<class name="com.zee5.AndroidMixpanelTest.AndroidMixpanel_P2_Events" />
+		</classes>
+	</test>
+	
+</suite>
